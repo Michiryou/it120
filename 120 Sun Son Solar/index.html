@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUN SON SOLAR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <section id="registrationView" class="view active" aria-label="Registration page">
+        <div class="auth-card">
+          <aside class="brand-panel" aria-label="SUN SON SOLAR branding">
+            <div class="brand-header">
+              <div class="brand-badge" aria-hidden="true">
+                <div class="sun-disk"></div>
+                <span class="ray ray-1"></span>
+                <span class="ray ray-2"></span>
+                <span class="ray ray-3"></span>
+                <span class="ray ray-4"></span>
+                <span class="ray ray-5"></span>
+                <span class="ray ray-6"></span>
+                <span class="ray ray-7"></span>
+                <span class="ray ray-8"></span>
+                <div class="energy-shape"></div>
+              </div>
+            </div>
+
+            <div class="brand-copy">
+              <div class="brand-name dark">SUN SON</div>
+              <div class="brand-name orange">SOLAR</div>
+              <p class="brand-tagline">EMPOWERING FUTURE GENERATIONS</p>
+            </div>
+
+            <div class="solar-field" aria-hidden="true">
+              <div class="panel-row row-a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="panel-row row-b">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="panel-row row-c">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </aside>
+
+          <main class="form-panel">
+            <div id="registrationNotice" class="form-message" aria-live="polite" hidden></div>
+
+            <h1>CREATE ACCOUNT</h1>
+            <p class="page-subtitle">Please fill in your details to register.</p>
+
+            <form id="registrationForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First Name</label>
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    placeholder="Enter first name"
+                    autocomplete="given-name"
+                  />
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                  <label for="middleName">Middle Name</label>
+                  <input
+                    id="middleName"
+                    name="middleName"
+                    type="text"
+                    placeholder="Enter middle name"
+                    autocomplete="additional-name"
+                  />
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    placeholder="Enter last name"
+                    autocomplete="family-name"
+                  />
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field half-width">
+                  <label for="birthdate">Birthdate</label>
+                  <input id="birthdate" name="birthdate" type="date" />
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field half-width">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender">
+                    <option value="">Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                  </select>
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field half-width">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="(+63)000-000-0000"
+                    autocomplete="tel"
+                  />
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field half-width">
+                  <label for="regUsername">Username</label>
+                  <input
+                    id="regUsername"
+                    name="username"
+                    type="text"
+                    placeholder="Enter username"
+                    autocomplete="username"
+                  />
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field full-width">
+                  <label for="regPassword">Password</label>
+                  <div class="password-wrap">
+                    <input
+                      id="regPassword"
+                      name="password"
+                      type="password"
+                      placeholder="Enter password"
+                      autocomplete="new-password"
+                    />
+                    <button type="button" class="toggle-password" data-target="regPassword" aria-label="Show password">
+                      👁
+                    </button>
+                  </div>
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+
+                <div class="field full-width">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <div class="password-wrap">
+                    <input
+                      id="confirmPassword"
+                      name="confirmPassword"
+                      type="password"
+                      placeholder="Confirm password"
+                      autocomplete="new-password"
+                    />
+                    <button type="button" class="toggle-password" data-target="confirmPassword" aria-label="Show password">
+                      👁
+                    </button>
+                  </div>
+                  <div class="error-text" aria-live="polite"></div>
+                </div>
+              </div>
+
+              <button type="submit" class="primary-btn">Register</button>
+            </form>
+
+            <p class="swap-text">
+              Already have an account?
+              <button type="button" class="inline-link" data-view="login">Log in</button>
+            </p>
+          </main>
+        </div>
+      </section>
+
+      <section id="loginView" class="view" aria-label="Login page">
+        <div class="auth-card">
+          <aside class="brand-panel" aria-label="SUN SON SOLAR branding">
+            <div class="brand-header">
+              <div class="brand-badge" aria-hidden="true">
+                <div class="sun-disk"></div>
+                <span class="ray ray-1"></span>
+                <span class="ray ray-2"></span>
+                <span class="ray ray-3"></span>
+                <span class="ray ray-4"></span>
+                <span class="ray ray-5"></span>
+                <span class="ray ray-6"></span>
+                <span class="ray ray-7"></span>
+                <span class="ray ray-8"></span>
+                <div class="energy-shape"></div>
+              </div>
+            </div>
+
+            <div class="brand-copy">
+              <div class="brand-name dark">SUN SON</div>
+              <div class="brand-name orange">SOLAR</div>
+              <p class="brand-tagline">EMPOWERING FUTURE GENERATIONS</p>
+            </div>
+
+            <div class="solar-field" aria-hidden="true">
+              <div class="panel-row row-a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="panel-row row-b">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="panel-row row-c">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </aside>
+
+          <main class="form-panel">
+            <div id="loginNotice" class="form-message" aria-live="polite" hidden></div>
+
+            <h1>LOGIN</h1>
+            <p class="page-subtitle">Welcome back! Please enter your details to continue.</p>
+
+            <form id="loginForm" novalidate>
+              <div class="field full-width">
+                <label for="loginUsername">Username</label>
+                <input
+                  id="loginUsername"
+                  name="loginUsername"
+                  type="text"
+                  placeholder="Enter username"
+                  autocomplete="username"
+                />
+                <div class="error-text" aria-live="polite"></div>
+              </div>
+
+              <div class="field full-width">
+                <label for="loginPassword">Password</label>
+                <div class="password-wrap">
+                  <input
+                    id="loginPassword"
+                    name="loginPassword"
+                    type="password"
+                    placeholder="Enter password"
+                    autocomplete="current-password"
+                  />
+                  <button type="button" class="toggle-password" data-target="loginPassword" aria-label="Show password">
+                    👁
+                  </button>
+                </div>
+                <div class="error-text" aria-live="polite"></div>
+              </div>
+
+              <button type="submit" class="primary-btn">Log in</button>
+            </form>
+
+            <p class="swap-text">
+              Don't have an account?
+              <button type="button" class="inline-link" data-view="registration">Register</button>
+            </p>
+          </main>
+        </div>
+      </section>
+
+      <section id="dashboardView" class="view" aria-label="Dashboard">
+        <div class="dashboard-shell">
+          <header class="dashboard-header">
+            <div class="dashboard-brand">
+              <div class="mini-badge" aria-hidden="true">
+                <span class="mini-core"></span>
+              </div>
+              <span>SUN SON SOLAR</span>
+            </div>
+            <button type="button" id="logoutBtn" class="logout-btn">Logout</button>
+          </header>
+
+          <main class="dashboard-content">
+            <h2>Welcome, <span id="dashboardName">User</span>!</h2>
+            <p class="dashboard-message">You are successfully logged in.</p>
+
+            <div class="info-card">
+              <h3>Account Information</h3>
+              <ul>
+                <li><strong>Name:</strong> <span id="dashboardFullName">-</span></li>
+                <li><strong>Username:</strong> <span id="dashboardUsername">-</span></li>
+                <li><strong>Phone:</strong> <span id="dashboardPhone">-</span></li>
+                <li><strong>Gender:</strong> <span id="dashboardGender">-</span></li>
+              </ul>
+            </div>
+          </main>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
